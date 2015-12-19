@@ -1,29 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 
 var React = require('react-native');
 var {
   AppRegistry,
   StyleSheet,
-  Text,
   NavigatorIOS,
-  View,
 } = React;
-
-var WelcomeScreen = React.createClass({
-  render: function() {
-    return (
-      <View style={styles.page}>
-        <Text>
-          shit
-        </Text>
-      </View>
-    );
-  }
-});
+var WelcomeScreen = require('./WelcomeScreen.js');
 
 var mailboxbox = React.createClass({
   render: function() {
@@ -42,11 +25,6 @@ var mailboxbox = React.createClass({
 var styles = StyleSheet.create({
   nav: {
     flex: 1
-  },
-  page: {
-    flex: 1,
-    paddingTop: 64,
-    margin: 10
   },
 });
 
